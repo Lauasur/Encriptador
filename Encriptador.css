@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    padding: 0;
+    width: 970px;
+    height: 970px;
+}
+.container{
+height: 650px;
+width:  970px;
+padding: 5px;
+background-image:url(imagenes/nubes.JPG); 
+
+}
+
+.alura{
+    width: 50px;
+    float: left;
+    height:  50px;
+    box-shadow: 0px 0px 15px 15px lightblue;
+}
+
+.title{
+    margin-left: 20px;
+    float: inherit;
+    width: 970px;
+    height: 30%;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0px 3px;
+    font-family: serif;  
+    display: inline; 
+    text-shadow: 0px 5px 0px 5px;
+    
+}
+
+.left{
+    width: 60%;
+    border-radius: 25px;
+    height: 70%;
+    float: left;
+    border-color: black;
+    background: linear-gradient( lightblue,white);
+    
+}
+.text-input{
+    width: 80%;
+    height: 80%;
+    border: none;
+    float: left;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+#mensaje{
+   float: left;
+    border-color: black;
+}
+
+.buttons{
+    width: 70%;
+    height: auto;
+    float: left;
+    border-radius: 24px;
+    box-shadow: 5px;
+}
+
+#btn-encriptar{
+   border-radius: 15px;
+    background-color: #0A3871;
+    margin: 15px;
+    padding: 15px;
+    width: 30%;
+    height: 60%;
+    box-shadow: 0px 5px #0a3871;
+    font-weight: bold;   
+     
+}
+
+#btn-desencriptar{
+   border-radius: 15px;
+   background-color: antiquewhite;
+   padding: 15px;
+   margin: 15px;
+   width: 30%;
+   height: 60%;
+   box-shadow: 0px 5px antiquewhite;
+   font-weight: bold;
+      
+}
+.right{
+    border-radius: 25px;
+    width: 40%;
+    background: white;
+    float: right;
+    border: black;
+    height: 70%;  
+    border-color: azure;
+    background: linear-gradient( lightblue,white);
+    
+}
+#imagenMuneco{
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 2%;
+    border-color: black;
+    float: right;
+    height: auto;
+}
+#texto{
+    margin-right: 5%;
+    border-radius: 10%;
+    width: 320px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+#resultado{
+    margin-left: 10%;
+    color: #0a3871;
+    border: none;
+    width: 250px;
+    border-radius: 10px;
+    height: 8%;
+    float: left;
+      
+}
+#botonCopiar{
+    border-radius: 10px;
+    height: 10%;
+    background-color: #0A3871;
+    width: 30%;
+    margin-left: 50%;   
+    display: none;
+    box-shadow: 0px 5px #0a3871;
+    float: left;
+    font-weight: bold;
+}
+ @media screen and (max-width:480px){
+
+    .container,.left,.rigth,.buttons{
+        width: 480px;
+        height: auto;
+        
+    }
+ }
+    
