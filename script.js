@@ -12,7 +12,7 @@ const btnCopiar= document.querySelector("#botonCopiar");
 function validar(){
   const inputMensaje1 = document.querySelector("#mensaje").value;
   if(/[A-Z|ÁÉÍÓÚáéíóú.,ñÑ]/g.test(inputMensaje1) == true) {
-    alert("Solo letras minúsculas.No acentos ni números!")
+    alert("Solo letras minúsculas.No acentos!")
   } else{
     encriptar();
   }
@@ -58,9 +58,9 @@ document.getElementById("botonCopiar").style.display= "inherit";
 }
 
                        
-btnEncriptar.onclick = validar(); 
-btnDesencriptar.onclick = desencriptar();
-btnCopiar.onclick = copiar();
+btnEncriptar.onclick = validar; 
+btnDesencriptar.onclick = desencriptar;
+btnCopiar.onclick = copiar;
 
 function copiar(){
 
