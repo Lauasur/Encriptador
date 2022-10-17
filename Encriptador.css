@@ -1,12 +1,12 @@
 body{
     margin: 0px;
-    padding: 0;
-    width: 970px;
-    height: 970px;
+    padding: 5px;
+    width: 1010px;
+    height: 650px;
 }
 .container{
 height: 650px;
-width:  970px;
+width:  1000px;
 padding: 5px;
 background-image:url(./Imagenes/nubes.jpg) 
 
