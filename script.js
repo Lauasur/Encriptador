@@ -11,9 +11,9 @@ const btnCopiar= document.querySelector("#botonCopiar");
  
 function validar(){
   const inputMensaje1 = document.querySelector("#mensaje").value;
-  if(/[A-Z|ÁÉÍÓÚáéíóú.,ñÑ]/g.test(inputMensaje1) == true) {
-    alert("Solo letras minúsculas.No acentos!")
-  } else{
+  if(/[A-Z|ÁÉÍÓÚáéíóú.,]/g.test(inputMensaje1) == true){
+   alert("Solo letras minúsculas.No acentos!")}
+   else{
     encriptar();
   }
 }
@@ -33,6 +33,7 @@ var txtCifrado = txtCifrado.replace(/u/img,"ufat");
 
 document.getElementById("imagenMuneco").style.display= "none";
 document.getElementById("resultado").innerHTML= txtCifrado;
+document.getElementById("texto").style.display= "none";
 document.getElementById("botonCopiar").style.display= "show";
 document.getElementById("botonCopiar").style.display="inherit";
 
@@ -52,6 +53,7 @@ var txtCifrado = txtCifrado.replace(/ufat/img,"u");
 
 document.getElementById("imagenMuneco").style.display= "none";
 document.getElementById("resultado").innerHTML= txtCifrado;
+document.getElementById("texto").style.display= "none";
 document.getElementById("botonCopiar").style.display= "show";
 document.getElementById("botonCopiar").style.display= "inherit";
 
@@ -66,7 +68,7 @@ function copiar(){
 
  var mensajeEncriptado= resultado.value;
   navigator.clipboard.writeText(mensajeEncriptado);
-  alert("Mensaje copiado");
+  alert("Mensaje copiado")
 }
    
  
